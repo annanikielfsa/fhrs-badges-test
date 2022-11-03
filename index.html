@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<title>Testing new FHRS badges</title>
+
+</head>
+
+<body>
+<div class="container-fluid overflow-hidden">
+<div class="row justify-content-center">
+<div class="col-10">
+<h1 class="pb-2">FHRS front-end - new badges test</h1>
+
+<h2>Code snippet</h2>
+<p class="bg-light"><code>&lt;script src="https://fhrsfrontend.azurewebsites.net/embed/embed-badge.js" data-business-id="1214168" data-rating-style="3" data-welsh="false"&gt;&lt;/script&gt;</code></p>
+
+<p>
+<ul>
+<li>data-business-id is the business' unique id</li>
+<li>data-rating-style is one of badge designs - values 1 to 5 work, if I put 6, some of the badges dissapear. Only 1-3 options are shown on the ratings website.</li>
+<li>data-welsh - if true, bilingual badge is displayed. This can be switched on and off for English / Welsh businesses (same as in current badges)</li>
+</ul>
+</p>
+
+
+<h2>English businesses</h2>
+
+<div class="accordion accordion-flush" id="accordionbusinessengland">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="business-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#business-collapseOne" aria-expanded="true" aria-controls="business-collapseOne">
+        Pizza Rizza (Displaying a rating)
+      </button>
+    </h2>
+    <div id="business-collapseOne" class="accordion-collapse collapse show" aria-labelledby="business-headingOne">
+      <div class="accordion-body">
+		<p>URL: <a href="https://fhrsfrontend.azurewebsites.net/business/1099554/pizza-rizza">https://fhrsfrontend.azurewebsites.net/business/1099554/pizza-rizza</a></p>
+		
+		<p>
+		<strong>New badges:</strong><br />
+		
+		<div class="d-flex flex-wrap pb-3">
+		<div class="p-2 mb-2"><script src="https://fhrsfrontend.azurewebsites.net/embed/embed-badge.js" data-business-id="1099554" data-rating-style="3" data-welsh="false"></script></div>
+		<div class="p-2 mb-2"><script src="https://fhrsfrontend.azurewebsites.net/embed/embed-badge.js" data-business-id="1099554" data-rating-style="2" data-welsh="false"></script></div>
+		<div class="p-2 mb-2"><script src="https://fhrsfrontend.azurewebsites.net/embed/embed-badge.js" data-business-id="1099554" data-rating-style="1" data-welsh="false"></script></div>
+		</div>
+		
+		</p>
+		<p>
+		<strong>Old badge:</strong><br />
+		<script type="text/javascript" src="https://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=1099554&Culture=en-GB&version=2"></script>
+		</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="business-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#business-collapseTwo" aria-expanded="false" aria-controls="business-collapseTwo">
+       Pizza (Awaiting inspection)
+      </button>
+    </h2>
+    <div id="business-collapseTwo" class="accordion-collapse collapse" aria-labelledby="business-headingTwo">
+      <div class="accordion-body">
+		<p>URL: <a href="https://fhrsfrontend.azurewebsites.net/business/1270705/pizza">https://fhrsfrontend.azurewebsites.net/business/1270705/pizza</a></p>
+		
+		<p>
+		<strong>New badges:</strong><br />
+		
+		<div class="d-flex flex-wrap pb-3">
+		<div class="p-2 mb-2"><script src="https://fhrsfrontend.azurewebsites.net/embed/embed-badge.js" data-business-id="1270705" data-rating-style="3" data-welsh="false"></script></div>
+		<div class="p-2 mb-2"><script src="https://fhrsfrontend.azurewebsites.net/embed/embed-badge.js" data-business-id="1270705" data-rating-style="2" data-welsh="false"></script></div>
+		<div class="p-2 mb-2"><script src="https://fhrsfrontend.azurewebsites.net/embed/embed-badge.js" data-business-id="1270705" data-rating-style="1" data-welsh="false"></script></div>
+		</div>
+		
+		</p>
+		<p>
+		<strong>Old badge:</strong><br />
+		<script type="text/javascript" src="https://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=1270705&Culture=en-GB&version=2"></script>
+		</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="business-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#business-collapseThree" aria-expanded="false" aria-controls="business-collapseThree">
+        Punk burgers (Exempt)
+      </button>
+    </h2>
+    <div id="business-collapseThree" class="accordion-collapse collapse" aria-labelledby="business-headingThree">
+      <div class="accordion-body">
+		<p>URL: <a href="https://fhrsfrontend.azurewebsites.net/business/1518519/punk-burgers">https://fhrsfrontend.azurewebsites.net/business/1518519/punk-burgers</a></p>
+		
+		<p>
+		<strong>New badges:</strong><br />
+		
+		<div class="d-flex flex-wrap pb-3">
+		<div class="p-2 mb-2"><script src="https://fhrsfrontend.azurewebsites.net/embed/embed-badge.js" data-business-id="1518519" data-rating-style="3" data-welsh="false"></script></div>
+		<div class="p-2 mb-2"><script src="https://fhrsfrontend.azurewebsites.net/embed/embed-badge.js" data-business-id="1518519" data-rating-style="2" data-welsh="false"></script></div>
+		<div class="p-2 mb-2"><script src="https://fhrsfrontend.azurewebsites.net/embed/embed-badge.js" data-business-id="1518519" data-rating-style="1" data-welsh="false"></script></div>
+		</div>
+		
+		</p>
+		<p>
+		<strong>Old badge:</strong><br />
+		<script type="text/javascript" src="https://widget.ratings.food.gov.uk/fhrswidget.jss?FHRSID=1518519&Culture=en-GB&version=2"></script>
+		</p>
+      </div>
+    </div>
+  </div>
+  
+  
+</div> <!-- English businesses - accordion -->
+
+<h2>Welsh businesses</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
